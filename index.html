@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Balsounds Taxi Services · Exuma, Bahamas</title>
+<meta name="description" content="Private taxi in Exuma: airport pickups, resort transfers and island tours in a spacious, air-conditioned SUV. Book on WhatsApp.">
+<style>
+@font-face{font-family:Cormorant;src:url(fonts/cormorant-garamond-latin-600-normal.woff2) format('woff2');font-weight:600}
+@font-face{font-family:Cormorant;src:url(fonts/cormorant-garamond-latin-600-italic.woff2) format('woff2');font-weight:600;font-style:italic}
+@font-face{font-family:Jost;src:url(fonts/jost-latin-400-normal.woff2) format('woff2');font-weight:400}
+@font-face{font-family:Jost;src:url(fonts/jost-latin-500-normal.woff2) format('woff2');font-weight:500}
+@font-face{font-family:Jost;src:url(fonts/jost-latin-600-normal.woff2) format('woff2');font-weight:600}
+:root{--navy:#0c2533;--deep:#081a24;--sea:#1fb5b0;--sea2:#7fdcd6;--sand:#f4ede2;--cream:#fbf8f2;--gold:#c9a96b;--ink:#13232c;--muted:#5f6f76;--line:#e6ded0}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Jost,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.55;padding-bottom:78px}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:Cormorant,Georgia,serif;font-weight:600;line-height:1.05}
+em{font-style:italic;color:var(--sea2)}
+.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--sea)}
+/* nav */
+nav{position:absolute;top:0;left:0;right:0;z-index:5;padding:18px 0}
+nav .wrap{display:flex;justify-content:space-between;align-items:center}
+.brand{color:#fff;font-family:Cormorant,Georgia,serif;font-size:26px;font-weight:600;letter-spacing:.02em;line-height:1}
+.brand small{display:block;font-family:Jost;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--sea2);margin-top:4px}
+.navbtn{background:#fff;color:var(--navy);padding:10px 16px;border-radius:999px;font-weight:600;font-size:14px;white-space:nowrap}
+/* hero */
+.hero{position:relative;color:#fff;background:radial-gradient(90% 60% at 90% 0%,rgba(31,181,176,.35),transparent 60%),linear-gradient(180deg,var(--navy),var(--deep));padding-top:110px}
+.hero .car{margin-top:28px;border-radius:24px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,.7)}.hero .car img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:50% 55%}@media(min-width:900px){.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}.hero .car{margin-top:0}.hero .trust{grid-column:1/-1}}
+.hero .wrap{position:relative;padding-bottom:42px;width:100%}
+.hero h1{font-size:clamp(46px,11vw,88px);margin:12px 0 14px}
+.hero p{font-size:17px;max-width:520px;color:#d8e6ea}
+.ctas{display:flex;gap:10px;margin-top:24px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:15px 22px;border-radius:999px;font-weight:600;font-size:15px}
+.btn.wa{background:var(--sea);color:#04201f}
+.btn.ghost{border:1.5px solid rgba(255,255,255,.55);color:#fff}
+.btn svg{width:18px;height:18px}
+.trust{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.12);border-radius:18px;overflow:hidden;margin-top:30px}
+@media(min-width:760px){.trust{grid-template-columns:repeat(4,1fr)}}
+.trust div{background:rgba(8,26,36,.75);padding:14px 16px}
+.trust b{display:block;font-family:Cormorant,Georgia,serif;font-size:24px;color:#fff}
+.trust span{font-size:12.5px;color:#a9c3ca}
+section{padding:72px 0}
+.t{font-size:clamp(36px,7vw,54px);margin:10px 0 14px}
+.sub{color:var(--muted);font-size:16.5px;max-width:560px}
+/* services */
+.grid{display:grid;gap:14px;margin-top:30px}
+@media(min-width:760px){.grid{grid-template-columns:repeat(2,1fr)}}
+.card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px}
+.card .ic{width:46px;height:46px;border-radius:14px;background:var(--sand);display:grid;place-items:center;color:var(--navy);margin-bottom:14px}
+.card h3{font-size:28px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:15px}
+.card .price{margin-top:14px;font-size:14px;font-weight:600;color:var(--navy);border-top:1px dashed var(--line);padding-top:12px;display:flex;justify-content:space-between}
+.card .price span{color:var(--gold)}
+.card.feat{background:var(--navy);color:#fff;border:0}
+.card.feat p{color:#b9cfd5}.card.feat .ic{background:rgba(255,255,255,.1);color:var(--sea2)}
+.card.feat .price{color:#fff;border-color:rgba(255,255,255,.2)}
+/* ride */
+.ride{background:var(--navy);color:#fff}
+.ride .sub{color:#b9cfd5}
+.ride .eyebrow{color:var(--sea2)}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:28px}
+.shots img{width:100%;height:100%;object-fit:cover;border-radius:18px;display:block;aspect-ratio:4/3}
+.shots img:first-child{grid-column:1/-1;aspect-ratio:16/9}
+.feats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+.feats div{border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:14px;font-size:14px;color:#d8e6ea}
+.feats b{display:block;color:#fff;font-weight:600;font-size:15px;margin-bottom:2px}
+/* places */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.chips span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 14px;font-size:14px}
+/* booking */
+.book{background:var(--sand)}
+.form{background:#fff;border-radius:26px;padding:24px;margin-top:26px;border:1px solid var(--line);display:grid;gap:14px}
+@media(min-width:760px){.form{grid-template-columns:1fr 1fr}.form .full{grid-column:1/-1}}
+label{font-size:13px;font-weight:600;color:var(--muted);display:block;margin-bottom:6px}
+input,select{width:100%;font:inherit;padding:13px 14px;border:1.5px solid var(--line);border-radius:14px;background:var(--cream);color:var(--ink)}
+input:focus,select:focus{outline:none;border-color:var(--sea)}
+.form button{border:0;cursor:pointer;justify-content:center;width:100%;font-family:inherit}
+.note{font-size:13px;color:var(--muted);text-align:center}
+/* steps */
+.steps{display:grid;gap:12px;margin-top:28px}
+@media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px}
+.step b{flex:none;width:36px;height:36px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-family:Cormorant,Georgia,serif;font-size:20px}
+.step h4{font-size:16px;margin-bottom:2px}.step p{font-size:14px;color:var(--muted)}
+/* reviews */
+.rev{background:#fff;border:1px solid var(--line);border-radius:24px;padding:26px;margin-top:26px;text-align:center}
+.stars{color:var(--gold);font-size:24px;letter-spacing:4px}
+.rev h3{font-size:34px;margin:6px 0}
+footer{background:var(--deep);color:#a9c3ca;padding:44px 0 30px;font-size:14px}
+footer .brand{margin-bottom:14px}
+footer a{color:#fff}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(8,26,36,.96);backdrop-filter:blur(8px);padding:10px 14px;display:flex;gap:10px}
+.bar a{flex:1;text-align:center;padding:14px;border-radius:999px;font-weight:600;font-size:15px}
+.bar .b1{background:var(--sea);color:#04201f}.bar .b2{border:1.5px solid rgba(255,255,255,.4);color:#fff}
+@media(min-width:900px){.bar{display:none}body{padding-bottom:0}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+ <a class="brand" href="#">Balsounds<small>Taxi Services · Exuma</small></a>
+ <a class="navbtn" href="#book">Book a ride</a>
+</div></nav>
+
+<header class="hero">
+  <div class="wrap">
+  <div>
+  <span class="eyebrow" style="color:var(--sea2)">George Town · Great Exuma</span>
+  <h1>Your ride in Exuma, <em>done right.</em></h1>
+  <p>Airport pickups, resort transfers and island tours in a spacious, air-conditioned SUV. Your driver is waiting when you land.</p>
+  <div class="ctas">
+   <a class="btn wa" href="https://wa.me/12425248371?text=Hi%20Balsounds!%20I'd%20like%20to%20book%20a%20ride%20in%20Exuma."><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2s-1 .2-3.4-.7a11.8 11.8 0 0 1-4.7-4.2c-.4-.6-1-1.7-1-2.9s.6-1.9.9-2.1c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6a8.6 8.6 0 0 0 4.2 3.7c.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.5z"/></svg>Book on WhatsApp</a>
+   <a class="btn ghost" href="tel:+12425248371">Call 242-524-8371</a>
+  </div>
+  </div>
+  <div class="car"><img src="suv2.jpg" alt="Balsounds Taxi SUV by the water in Exuma"></div>
+  <div class="trust">
+   <div><b>5.0 ★</b><span>on Google</span></div>
+   <div><b>Airport</b><span>pickups & drop-offs</span></div>
+   <div><b>Spacious SUV</b><span>room for family & luggage</span></div>
+   <div><b>Local driver</b><span>knows every beach</span></div>
+  </div>
+ </div>
+</header>
+
+<section id="services"><div class="wrap">
+ <span class="eyebrow">What we do</span>
+ <h2 class="t">Wherever you're going on the island.</h2>
+ <p class="sub">Tell us your flight or your plans, and we'll take care of the rest.</p>
+ <div class="grid">
+  <div class="card feat">
+   <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 16l20-6-3-3-6 2-5-5-2 1 3 6-5 2-2-1-1 1 3 3z"/></svg></div>
+   <h3>Airport transfers</h3>
+   <p>We track your flight and meet you at Exuma International arrivals, ready to load your bags and get you to your resort, villa or Airbnb.</p>
+   <div class="price">Airport to George Town <span>Ask for rate</span></div>
+  </div>
+  <div class="card">
+   <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></div>
+   <h3>Resort & villa transfers</h3>
+   <p>Between hotels, villas, marinas and the dock for your boat tour. On time, every time.</p>
+   <div class="price">Around the island <span>Ask for rate</span></div>
+  </div>
+  <div class="card">
+   <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M14.5 9.5l-2 5-5 2 2-5z"/></svg></div>
+   <h3>Island tours</h3>
+   <p>See the best of Great Exuma with someone who knows it: beaches, lookouts, local food and the spots tourists miss.</p>
+   <div class="price">Half or full day <span>Ask for rate</span></div>
+  </div>
+  <div class="card">
+   <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c4 4 6 7 6 10a6 6 0 0 1-12 0c0-3 2-6 6-10z"/></svg></div>
+   <h3>Dinners & nights out</h3>
+   <p>Enjoy dinner in George Town or a night at the fish fry. We'll drop you off and pick you up safely.</p>
+   <div class="price">Evening rides <span>Ask for rate</span></div>
+  </div>
+ </div>
+</div></section>
+
+<section class="ride"><div class="wrap">
+ <span class="eyebrow">Your ride</span>
+ <h2 class="t">Travel in comfort.</h2>
+ <p class="sub">A clean, spacious SUV with cold air conditioning, plenty of room for the whole family and all your luggage.</p>
+ <div class="shots">
+  <img src="suv1.jpg" alt="Balsounds Taxi SUV in Exuma by the water">
+  <img src="suv2.jpg" alt="Balsounds Taxi SUV side view">
+  <img src="suv3.jpg" alt="Balsounds Taxi SUV rear view">
+  <img src="suv4.jpg" alt="Balsounds Taxi SUV side view on the water" style="grid-column:1/-1;aspect-ratio:16/9">
+ </div>
+ <div class="feats">
+  <div><b>Cold A/C</b>Arrive fresh, not sweaty</div>
+  <div><b>Lots of space</b>Families, groups & luggage</div>
+  <div><b>On time</b>We're there before you land</div>
+  <div><b>Easy booking</b>One WhatsApp message</div>
+ </div>
+</div></section>
+
+<section><div class="wrap">
+ <span class="eyebrow">Popular rides</span>
+ <h2 class="t">Where guests ask us to go.</h2>
+ <div class="chips">
+  <span>Exuma International Airport</span><span>George Town</span><span>Tropic of Cancer Beach</span><span>Coco Plum Beach</span><span>Emerald Bay</span><span>Marinas & boat tours</span><span>Fish fry</span><span>Grocery runs</span>
+ </div>
+ <div class="steps">
+  <div class="step"><b>1</b><div><h4>Send your details</h4><p>Your flight or pickup time, on WhatsApp.</p></div></div>
+  <div class="step"><b>2</b><div><h4>We confirm</h4><p>You get your price and pickup point right away.</p></div></div>
+  <div class="step"><b>3</b><div><h4>Enjoy the ride</h4><p>Your driver is waiting. Relax, you're on island time.</p></div></div>
+ </div>
+</div></section>
+
+<section class="book" id="book"><div class="wrap">
+ <span class="eyebrow">Book your ride</span>
+ <h2 class="t">Reserve before you land.</h2>
+ <p class="sub">Fill this in and it opens WhatsApp with your booking already written. Just hit send.</p>
+ <form class="form" id="f">
+  <div><label for="n">Your name</label><input id="n" placeholder="Jane Smith" required></div>
+  <div><label for="d">Date</label><input id="d" type="date" required></div>
+  <div><label for="s">Service</label><select id="s"><option>Airport pickup</option><option>Airport drop-off</option><option>Resort / villa transfer</option><option>Island tour</option><option>Dinner / night out</option></select></div>
+  <div><label for="p">Passengers</label><select id="p"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6+</option></select></div>
+  <div class="full"><label for="x">Flight number or pickup location</label><input id="x" placeholder="e.g. AA 1234, or Grand Isle Resort"></div>
+  <div class="full"><button class="btn wa" type="submit">Send booking on WhatsApp</button><p class="note" style="margin-top:10px">We reply fast to confirm your ride and price.</p></div>
+ </form>
+</div></section>
+
+<section><div class="wrap">
+ <div class="rev">
+  <div class="stars">★★★★★</div>
+  <h3>Rated 5.0 on Google</h3>
+  <p class="sub" style="margin:0 auto 18px">Rode with us? We'd love to hear about it. It helps other visitors find a driver they can trust.</p>
+  <a class="btn wa" style="background:var(--navy);color:#fff" href="https://www.google.com/maps/search/Balsounds+Taxi+Services+Exuma">Leave us a review</a>
+ </div>
+</div></section>
+
+<footer><div class="wrap">
+ <div class="brand">Balsounds<small>Taxi Services · Exuma</small></div>
+ <p>George Town, Great Exuma, Bahamas<br>Call or WhatsApp: <a href="tel:+12425248371">+1 242-524-8371</a></p>
+ <p style="margin-top:18px;font-size:12px;opacity:.7">© 2026 Balsounds Taxi Services</p>
+</div></footer>
+
+<div class="bar">
+ <a class="b1" href="https://wa.me/12425248371?text=Hi%20Balsounds!%20I'd%20like%20to%20book%20a%20ride%20in%20Exuma.">Book on WhatsApp</a>
+ <a class="b2" href="tel:+12425248371">Call</a>
+</div>
+
+<script>
+document.getElementById('f').addEventListener('submit',function(e){
+ e.preventDefault();
+ const v=id=>document.getElementById(id).value.trim();
+ const msg=`Hi Balsounds! I'd like to book a ride.\n\nName: ${v('n')}\nDate: ${v('d')}\nService: ${v('s')}\nPassengers: ${v('p')}\nFlight / pickup: ${v('x')||'-'}`;
+ window.open('https://wa.me/12425248371?text='+encodeURIComponent(msg),'_blank');
+});
+</script>
+</body>
+</html>
